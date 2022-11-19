@@ -5,7 +5,6 @@ const port = 3000;
 app.get('/',(req, res)=>{
     try {
         var data = req.rawHeaders[1];
-        console.log(data);
         if (data == `localhost:${port}`) {
             throw "";
         }
